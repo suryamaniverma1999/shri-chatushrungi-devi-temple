@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="section donate">
+    <h1>Donate for Temple / मंदिर चंदा</h1>
+    <p>Your contribution helps in temple seva, maintenance, festivals and devotee services.</p>
+
+    <img class="qr" src="{{ url_for('static', filename='images/qr-code.png') }}" alt="Donation QR Code">
+
+    <h3>Scan QR Code to Donate</h3>
+    <p>Use PhonePe, Google Pay, Paytm or any UPI app.</p>
+
+    <div class="bank-box">
+        <h3>Bank Details</h3>
+        <p><b>Account Name:</b> Shri Chatushrungi Devi Temple Trust</p>
+        <p><b>Account Number:</b> XXXXXXXX</p>
+        <p><b>IFSC:</b> XXXXXXXX</p>
+        <p><b>UPI ID:</b> yourupi@bank</p>
+    </div>
+</section>
+
+{% endblock %}

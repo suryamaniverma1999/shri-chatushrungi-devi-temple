@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <img src="{{ url_for('static', filename='images/cover.jpg') }}" alt="Temple Cover">
+    <div class="hero-text">
+        <h1>Shri Chatushrungi Devi Temple Trust</h1>
+        <h2>श्री चतुश्रुंगी देवी मंदिर</h2>
+        <p>A sacred place of faith, devotion and blessings.</p>
+        <a href="/donate" class="btn">Donate Now</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>About Temple</h2>
+    <p>
+        Shri Chatushrungi Devi Temple is a holy Hindu temple dedicated to Goddess Chatushrungi Devi.
+        The temple is a place of devotion, peace and spiritual strength for devotees.
+    </p>
+</section>
+
+<section class="section cards">
+    <div class="card">
+        <h3>Darshan Timings</h3>
+        <p>Morning: 6:00 AM - 12:00 PM</p>
+        <p>Evening: 4:00 PM - 9:00 PM</p>
+    </div>
+
+    <div class="card">
+        <h3>Aarti Timings</h3>
+        <p>Morning Aarti: 7:00 AM</p>
+        <p>Evening Aarti: 7:30 PM</p>
+    </div>
+
+    <div class="card">
+        <h3>Contact</h3>
+        <p>Phone: 8851916981</p>
+        <p>Email: info@shrichatushrungidevitemple.in</p>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Temple Image</h2>
+    <img class="main-img" src="{{ url_for('static', filename='images/devi.jpg') }}" alt="Shri Chatushrungi Devi">
+</section>
+
+{% endblock %}
