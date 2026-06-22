@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <title>Shri Chatushrungi Devi Temple Trust</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Official website of Shri Chatushrungi Devi Temple Trust. Darshan timings, events, donation, gallery and contact details.">
+    <meta name="description" content="Official website of Shri Chatushrungi Devi Temple Trust. Darshan timings, events, aarti, donation, gallery and contact details.">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
     <link rel="icon" href="{{ url_for('static', filename='images/devi.jpg') }}">
 </head>
 
@@ -16,13 +14,13 @@
 
 <header class="topbar">
     <div class="container nav">
-        <div class="brand">
+        <a class="brand" href="/">
             <span class="brand-icon">🛕</span>
             <div>
                 <h2>Shri Chatushrungi Devi Temple Trust</h2>
                 <p>श्री चतुश्रुंगी देवी मंदिर</p>
             </div>
-        </div>
+        </a>
 
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
@@ -30,6 +28,7 @@
             <a href="/">Home</a>
             <a href="/history">History</a>
             <a href="/timings">Timings</a>
+            <a href="/aarti">Aarti</a>
             <a href="/events">Events</a>
             <a href="/gallery">Gallery</a>
             <a href="/donation">Donation</a>
@@ -53,6 +52,7 @@
             <h4>Quick Links</h4>
             <a href="/">Home</a>
             <a href="/timings">Darshan Timings</a>
+            <a href="/aarti">Aarti</a>
             <a href="/donation">Donation</a>
             <a href="/contact">Contact</a>
         </div>

@@ -18,6 +18,11 @@ def timings():
     return render_template("timings.html")
 
 
+@app.route("/aarti")
+def aarti():
+    return render_template("aarti.html")
+
+
 @app.route("/events")
 def events():
     return render_template("events.html")
