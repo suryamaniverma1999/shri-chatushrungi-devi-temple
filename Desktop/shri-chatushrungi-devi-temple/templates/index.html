@@ -4,19 +4,25 @@
 
 <section class="hero">
     <img src="{{ url_for('static', filename='images/cover.jpg') }}" alt="Temple Cover">
-    <div class="hero-text">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
         <h1>Shri Chatushrungi Devi Temple Trust</h1>
         <h2>श्री चतुश्रुंगी देवी मंदिर</h2>
-        <p>A sacred place of faith, devotion and blessings.</p>
-        <a href="/donate" class="btn">Donate Now</a>
+        <p>Welcome to the sacred home of Maa Chatushrungi Devi</p>
+
+        <div class="hero-buttons">
+            <a href="/timings" class="btn primary">Darshan Timings</a>
+            <a href="/donation" class="btn secondary">Donate Now</a>
+        </div>
     </div>
 </section>
 
 <section class="section">
-    <h2>About Temple</h2>
+    <h2>Welcome to Shri Chatushrungi Devi Temple</h2>
     <p>
-        Shri Chatushrungi Devi Temple is a holy Hindu temple dedicated to Goddess Chatushrungi Devi.
-        The temple is a place of devotion, peace and spiritual strength for devotees.
+        Shri Chatushrungi Devi Temple is a divine place of worship dedicated to Maa Chatushrungi Devi.
+        Devotees visit the temple for blessings, peace, strength and spiritual guidance.
     </p>
 </section>
 
@@ -34,15 +40,44 @@
     </div>
 
     <div class="card">
-        <h3>Contact</h3>
+        <h3>Temple Contact</h3>
         <p>Phone: 8851916981</p>
-        <p>Email: info@shrichatushrungidevitemple.in</p>
+        <p>WhatsApp Available</p>
     </div>
 </section>
 
+<section class="section highlight">
+    <div>
+        <h2>Daily Seva & Donation</h2>
+        <p>
+            Your donation supports temple seva, festivals, maintenance, prasadam,
+            lighting, cleanliness and devotee facilities.
+        </p>
+        <a href="/donation" class="btn primary">Contribute Now</a>
+    </div>
+
+    <img src="{{ url_for('static', filename='images/devi.jpg') }}" alt="Maa Chatushrungi Devi">
+</section>
+
 <section class="section">
-    <h2>Temple Image</h2>
-    <img class="main-img" src="{{ url_for('static', filename='images/devi.jpg') }}" alt="Shri Chatushrungi Devi">
+    <h2>Latest Events</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Navratri Mahotsav</h3>
+            <p>Special pooja, aarti and bhajan during Navratri.</p>
+        </div>
+
+        <div class="card">
+            <h3>Special Aarti</h3>
+            <p>Evening aarti with devotees and temple trust members.</p>
+        </div>
+
+        <div class="card">
+            <h3>Annadan Seva</h3>
+            <p>Food distribution and seva for devotees.</p>
+        </div>
+    </div>
 </section>
 
 {% endblock %}

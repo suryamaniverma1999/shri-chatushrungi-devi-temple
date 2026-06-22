@@ -4,28 +4,73 @@
     <meta charset="UTF-8">
     <title>Shri Chatushrungi Devi Temple Trust</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta name="description" content="Official website of Shri Chatushrungi Devi Temple Trust. Darshan timings, events, donation, gallery and contact details.">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="icon" href="{{ url_for('static', filename='images/devi.jpg') }}">
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <div class="logo">श्री चतुश्रुंगी देवी मंदिर</div>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/donate">Donate</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
+<header class="topbar">
+    <div class="container nav">
+        <div class="brand">
+            <span class="brand-icon">🛕</span>
+            <div>
+                <h2>Shri Chatushrungi Devi Temple Trust</h2>
+                <p>श्री चतुश्रुंगी देवी मंदिर</p>
+            </div>
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="navLinks">
+            <a href="/">Home</a>
+            <a href="/history">History</a>
+            <a href="/timings">Timings</a>
+            <a href="/events">Events</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/donation">Donation</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
 {% block content %}{% endblock %}
 
+<a class="whatsapp-float" href="https://wa.me/918851916981" target="_blank">WhatsApp</a>
+
 <footer>
-    <p>© 2026 Shri Chatushrungi Devi Temple Trust</p>
-    <p>Contact: 8851916981</p>
+    <div class="container footer-grid">
+        <div>
+            <h3>Shri Chatushrungi Devi Temple Trust</h3>
+            <p>A sacred place of faith, devotion and blessings.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="/">Home</a>
+            <a href="/timings">Darshan Timings</a>
+            <a href="/donation">Donation</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Phone: 8851916981</p>
+            <p>Email: info@shrichatushrungidevitemple.in</p>
+            <p>Pune, Maharashtra, India</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © 2026 Shri Chatushrungi Devi Temple Trust. All Rights Reserved.
+    </div>
 </footer>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>
